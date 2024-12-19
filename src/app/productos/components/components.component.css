@@ -1,0 +1,146 @@
+h1 {
+  font-size: 8rem;
+  color: rgb(0, 0, 0);
+  font-family: "Playfair Display";
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 7rem;
+  color: rgb(0, 0, 0);
+  font-family: "Playfair Display";
+  font-weight: 700;
+}
+.contenedor-texto {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+.header {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-family: "Brush Script MT", cursive;
+  font-size: 7rem;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-family: "Arial", sans-serif;
+  font-size: 3.5rem;
+  color: #f8f9fa;
+  font-weight: 300;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.sub-titulo {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.fondo {
+  background-image: url("../../../../public/fondosIMG/fondo2.png");
+  background-size: cover; /* La imagen cubrirá toda la pantalla */
+  background-attachment: fixed;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Para los productos publicados */
+
+.Productos {
+  margin-top: 100px;
+  height: auto;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  border: 5px solid #ff9a9e;
+  border-radius: 15px;
+  overflow: auto;
+}
+
+/* Contenedor de las imágenes con CSS Grid */
+.image-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 0;
+  gap: 20px; /* Espacio entre las imágenes */
+  padding: 20px;
+  width: auto;
+  height: auto;
+  overflow: auto;
+}
+
+/* Estilo de las imágenes */
+.image-item {
+  width: 100%; /* La imagen ocupa todo el ancho de su columna */
+  height: 450px; /* Fija una altura para que todas las imágenes sean del mismo tamaño */
+  object-fit: cover; /* Asegura que la imagen cubra el área del contenedor sin distorsionarse */
+  border-radius: 10px; /* Bordes redondeados */
+
+  opacity: 0; /* Inicialmente la imagen está oculta */
+  transform: translateY(30px); /* La imagen comienza desplazada hacia abajo */
+  animation: fadeInUp 0.8s ease-out forwards; /* Llama a la animación 'fadeInUp' */
+  animation-delay: 0.5s; /* Retardo en la animación para las imágenes */
+}
+
+.image-item:hover {
+  scale: 1.1;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(600px); /* Empieza desde abajo */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Termina en su posición normal */
+  }
+}
+
+/* Responsive: para pantallas pequeñas */
+@media (max-width: 1024px) {
+  .image-container {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(200px, 1fr)
+    ); /* En pantallas medianas, las imágenes ocupan un 50% del ancho */
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .image-container {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(150px, 1fr)
+    ); /* En pantallas pequeñas, las imágenes ocupan un 100% del ancho */
+  }
+}

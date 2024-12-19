@@ -1,0 +1,190 @@
+h1 {
+  font-size: 8rem;
+}
+
+h2{
+  font-size: 5rem;
+}
+
+.video-container {
+  position: fixed; /* El video queda fijo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+/* Ajuste del video */
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que el video cubra toda la pantalla */
+}
+
+/* Contenido principal */
+.content {
+display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1; /* Coloca el contenido sobre el video */
+  text-align: center;
+  margin-top: 3%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.img-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-weight: 900; /* Negrita */
+  text-transform: uppercase;
+  letter-spacing: 3px; /* Espaciado entre letras */
+}
+
+.animated-div {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 40px;
+  font-size: 24px;
+  border-radius: 8px;
+  opacity: 0; /* Empieza invisible */
+  transform: translateX(-100%); /* Inicia fuera de la pantalla (izquierda) */
+  animation: slideIn 1.5s ease-out forwards; /* Nombre, duración, efecto y "forwards" para mantener la posición final */
+}
+
+/* Definición de la animación */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.imagen-lu {
+  max-width: 100%; /* La imagen no será más ancha que su contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block;
+  border-radius: 20px;
+}
+
+.imagen-lu:hover {
+  translate: 200;
+  scale: 1.1;
+}
+
+.contenedor {
+  margin-top: 200px;
+  margin-left: 20px;
+  width: 80%;
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  gap: 80px;
+}
+
+.contenedor-texto {
+  margin-left: 3rem;
+  width: 800px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  
+}
+
+.texto {
+  font-size: 2.5rem;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  
+  .title h1{
+    font-size:4rem;
+  }
+  
+  .texto {
+    font-size: 2rem;
+  }
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenedor-texto {
+    margin-top: 10%;
+    margin-left: 3rem;
+    width: 300px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenedor-texto {
+    margin-top: 10%;
+    margin-left: 3rem;
+    width: 400px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 6rem;
+  }
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenedor-texto {
+    margin-top: 10%;
+    margin-left: 3rem;
+    width: 800px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1224px) {
+  h1 {
+    font-size: 7rem;
+  }
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenedor-texto {
+    margin-top: 10%;
+    margin-left: 3rem;
+    width: 800px;
+    max-width: 100%;
+  }
+}

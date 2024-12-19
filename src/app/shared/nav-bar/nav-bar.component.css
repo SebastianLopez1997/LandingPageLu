@@ -1,0 +1,14 @@
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+.navbar {
+  font-size: 2.5rem;
+}
+
+.nav-link:hover {
+  scale: 1.1;
+  color: rgb(245, 161, 27);
+  font-weight: 900;
+}

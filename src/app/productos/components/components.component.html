@@ -1,0 +1,42 @@
+<section class="fondo">
+  <div class="contenedor-texto">
+    <div class="header">
+      <h1 class="title">Mis obras disponibles para la venta</h1>
+      <h2 class="subtitle">Pedi la tuya totalmente personalizable</h2>
+    </div>
+  </div>
+  <div class="Productos">
+
+    <div class="image-container">
+      <h3 class="sub-titulo">Macetas</h3>
+      @for (item of productos; track $index) { @if (item.type=='maceta') {
+      <img src="{{ item.url }}" alt="Obra de arte" class="image-item" />
+      } }
+      
+      <br>
+      
+      
+      
+    </div>
+    <br>
+    <div class="image-container">
+      <h3 class="sub-titulo">Tazas</h3>
+      @for (item of productos; track $index) { @if (item.type=='taza') {
+        <img src="{{ item.url }}" alt="Obra de arte" class="image-item" />
+        } }
+      
+      
+    </div>
+    
+    <div class="image-container">
+      <h3 class="sub-titulo">Discos</h3>
+      @for (item of productos; track $index) { @if (item.type=='disco') {
+        <img src="{{ item.url }}" alt="Obra de arte" class="image-item" />
+        } }
+    </div>
+    
+  </div>
+  
+  
+  
+</section>
