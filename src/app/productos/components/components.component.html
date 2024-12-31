@@ -1,15 +1,50 @@
 <section class="fondo">
   <div class="contenedor-texto">
     <div class="header">
-      
-      <img src="fondosIMG/yellow2.png" alt="Titulo obras a la venta" class="obras" >
+      <img
+        src="fondosIMG/yellow2.png"
+        alt="Titulo obras a la venta"
+        class="obras"
+      />
     </div>
   </div>
   <div class="Productos">
-
     <div class="image-container">
       <h3 class="sub-titulo">Macetas</h3>
       @for (item of productos; track $index) { @if (item.type=='maceta') {
+      <img src="{{ item.url }}" alt="Obra de arte" class="image-item" />
+      } }
+
+      <br />
+    </div>
+    <br />
+    <div class="image-container">
+      <h3 class="sub-titulo">Tazas</h3>
+      @for (item of productos; track $index) { @if (item.type=='taza') {
+      <img src="{{ item.url }}" alt="Obra de arte" class="image-item" />
+      } }
+    </div>
+
+    <div class="image-container">
+      <h3 class="sub-titulo">Discos</h3>
+      @for (item of productos; track $index) { @if (item.type=='disco') {
+      <img src="{{ item.url }}" alt="Obra de arte" class="image-item" />
+      } }
+    </div>
+    <br />
+    <div class="image-container">
+      <h3 class="sub-titulo">Cuadros</h3>
+      @for (item of productos; track $index) { @if (item.type=='cuadro') {
+      <img src="{{ item.url }}" alt="Obra de arte" class="image-item" />
+      } }
+
+      <br />
+    </div>
+    <br />
+    
+    <div class="image-container">
+      <h3 class="sub-titulo">Mates</h3>
+      @for (item of productos; track $index) { @if (item.type=='mate') {
       <img src="{{ item.url }}" alt="Obra de arte" class="image-item" />
       } }
       
@@ -19,24 +54,13 @@
       
     </div>
     <br>
-    <div class="image-container">
-      <h3 class="sub-titulo">Tazas</h3>
-      @for (item of productos; track $index) { @if (item.type=='taza') {
-        <img src="{{ item.url }}" alt="Obra de arte" class="image-item" />
-        } }
-      
-      
-    </div>
     
     <div class="image-container">
-      <h3 class="sub-titulo">Discos</h3>
-      @for (item of productos; track $index) { @if (item.type=='disco') {
-        <img src="{{ item.url }}" alt="Obra de arte" class="image-item" />
-        } }
+      <h3 class="sub-titulo">Llaveros</h3>
+      @for (item of productos; track $index) { @if (item.type=='llavero') {
+      <img src="{{ item.url }}" alt="Obra de arte" class="image-item" />
+      } }
     </div>
-    
+      
   </div>
-  
-  
-  
 </section>
