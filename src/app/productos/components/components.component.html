@@ -41,26 +41,22 @@
       <br />
     </div>
     <br />
-    
+
     <div class="image-container">
       <h3 class="sub-titulo">Mates</h3>
       @for (item of productos; track $index) { @if (item.type=='mate') {
       <img src="{{ item.url }}" alt="Obra de arte" class="image-item" />
       } }
-      
-      <br>
-      
-      
-      
+
+      <br />
     </div>
-    <br>
-    
+    <br />
+
     <div class="image-container">
       <h3 class="sub-titulo">Llaveros</h3>
       @for (item of productos; track $index) { @if (item.type=='llavero') {
       <img src="{{ item.url }}" alt="Obra de arte" class="image-item" />
       } }
     </div>
-      
   </div>
 </section>
