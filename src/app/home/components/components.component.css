@@ -58,9 +58,9 @@ h2 {
   padding: 10px 40px;
   font-size: 24px;
   border-radius: 8px;
-  opacity: 0; 
-  transform: translateX(-100%); 
-  animation: slideIn 1.5s ease-out forwards; 
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 1.5s ease-out forwards;
   text-align: center;
 }
 
@@ -90,7 +90,7 @@ h2 {
 
 .contenedor {
   margin-top: 200px;
-  
+
   width: 80%;
   height: auto;
   max-width: 100%;
@@ -99,7 +99,6 @@ h2 {
 }
 
 .contenedor-texto {
- 
   width: 800px;
   max-width: 100%;
   display: flex;
