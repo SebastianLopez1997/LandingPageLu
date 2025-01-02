@@ -12,8 +12,8 @@ export class ComponentsComponent {
   productos: ProductoInterface[] = [
     { type: 'maceta', url: 'productosIMG/producto2.jpg' },
     { type: 'maceta', url: 'productosIMG/producto3.jpg' },
-    { type: 'maceta', url: 'productosIMG/producto4.jpg' },
-    { type: 'maceta', url: 'productosIMG/producto5.jpg' },
+    { type: 'mate', url: 'productosIMG/producto4.jpg' },
+    { type: 'mate', url: 'productosIMG/producto5.jpg' },
     { type: 'disco', url: 'productosIMG/producto6.jpg' },
     { type: 'disco', url: 'productosIMG/producto7.jpg' },
     { type: 'cuadro', url: 'productosIMG/producto8.jpg' },
