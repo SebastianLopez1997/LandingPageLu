@@ -33,8 +33,9 @@ h2 {
   text-align: center;
   margin-top: 3%;
   background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
+  overflow: hide;
 }
 
 .img-cont {
@@ -54,12 +55,13 @@ h2 {
 .animated-div {
   background-color: #333;
   color: #fff;
-  padding: 20px 40px;
+  padding: 10px 40px;
   font-size: 24px;
   border-radius: 8px;
-  opacity: 0; /* Empieza invisible */
-  transform: translateX(-100%); /* Inicia fuera de la pantalla (izquierda) */
-  animation: slideIn 1.5s ease-out forwards; /* Nombre, duración, efecto y "forwards" para mantener la posición final */
+  opacity: 0; 
+  transform: translateX(-100%); 
+  animation: slideIn 1.5s ease-out forwards; 
+  text-align: center;
 }
 
 /* Definición de la animación */
@@ -88,7 +90,7 @@ h2 {
 
 .contenedor {
   margin-top: 200px;
-  margin-left: 20px;
+  
   width: 80%;
   height: auto;
   max-width: 100%;
@@ -97,14 +99,15 @@ h2 {
 }
 
 .contenedor-texto {
-  margin-left: 3rem;
+ 
   width: 800px;
   max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  text-align: center;
+  gap: 20px;
 }
 
 .texto {
@@ -195,8 +198,8 @@ h2 {
 
   .contenedor-texto {
     margin-top: 10%;
-    margin-left: 3rem;
-    width: 300px;
+    margin-right: 10px;
+    width: 400px;
     max-width: 100%;
   }
 }
@@ -213,7 +216,6 @@ h2 {
 
   .contenedor-texto {
     margin-top: 10%;
-    margin-left: 3rem;
     width: 400px;
     max-width: 100%;
   }
@@ -231,7 +233,6 @@ h2 {
 
   .contenedor-texto {
     margin-top: 10%;
-    margin-left: 3rem;
     width: 800px;
     max-width: 100%;
   }
@@ -249,7 +250,6 @@ h2 {
 
   .contenedor-texto {
     margin-top: 10%;
-    margin-left: 3rem;
     width: 800px;
     max-width: 100%;
   }
