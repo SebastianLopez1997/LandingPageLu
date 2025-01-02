@@ -76,6 +76,8 @@ h2 {
   width: auto;
   height: auto;
   overflow: auto;
+  overflow-y: hidden;
+  cursor: auto;
 }
 
 /* Estilo de las imágenes */

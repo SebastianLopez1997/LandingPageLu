@@ -10,7 +10,6 @@ import { ProductoInterface } from '../interface/producto-interface';
 })
 export class ComponentsComponent {
   productos: ProductoInterface[] = [
-    { type: 'taza', url: 'productosIMG/producto1.jpg' },
     { type: 'maceta', url: 'productosIMG/producto2.jpg' },
     { type: 'maceta', url: 'productosIMG/producto3.jpg' },
     { type: 'maceta', url: 'productosIMG/producto4.jpg' },
@@ -42,5 +41,13 @@ export class ComponentsComponent {
     { type: 'cuadro', url: 'productosIMG/producto30.jpg' },
     { type: 'cuadro', url: 'productosIMG/producto31.jpg' },
     { type: 'cuadro', url: 'productosIMG/producto32.jpg' },
+    { type: 'mate', url: 'productosIMG/producto33.jpg' },
+    { type: 'mate', url: 'productosIMG/producto34.jpg' },
+    { type: 'mate', url: 'productosIMG/producto35.jpg' },
+    { type: 'maceta', url: 'productosIMG/producto36.jpg' },
+    { type: 'llavero', url: 'productosIMG/producto37.jpg' },
+    { type: 'llavero', url: 'productosIMG/producto38.jpg' },
+    { type: 'mate', url: 'productosIMG/producto39.jpg' },
+    { type: 'llavero', url: 'productosIMG/producto40.jpg' },
   ];
 }

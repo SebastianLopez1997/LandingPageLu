@@ -1,7 +1,10 @@
 <section class="contenedor">
   <div class="form-container">
     <h1>Contacto via e-mail</h1>
-    <form action="#" method="POST">
+    <form
+      action="https://formspree.io/f/mnnnoqkb"
+      method="POST"
+    >
       <label for="email">Email:</label>
       <input
         type="email"
@@ -9,7 +12,13 @@
         name="email"
         placeholder="Tu correo"
         required
+        
       />
+<!-- 
+      @if(formulario.controls['email'].getError('required') &&
+      formulario.controls['email'].touched){
+      <p class="error">*Email invalido</p>
+      } -->
 
       <label for="nombre">Nombre:</label>
       <input
@@ -18,7 +27,14 @@
         name="nombre"
         placeholder="Tu nombre"
         required
+       
       />
+
+      <!-- @if((formulario.controls['nombre'].getError('required') ||
+      formulario.controls['nombre'].getError('minlength')) &&
+      formulario.controls['nombre'].touched ){
+      <p class="error">*Nombre invalido</p>
+      } -->
 
       <label for="mensaje">Mensaje:</label>
       <textarea
@@ -27,6 +43,7 @@
         placeholder="Escribe tu mensaje"
         rows="4"
         required
+        minlength="4"
       ></textarea>
 
       <button type="submit">Enviar</button>
